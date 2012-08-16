@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="resultCaloriasLabel">Consumo calórico diario: </string>
+    <string name="resultTxtLabel">Resultado: </string>  
+    <string name="resultPiTxtLabel">Peso ideal: </string>       
+    <string name="estaturaLabel">Estatura: </string>   
+    <string name="pesoLabel">Peso: </string>  
+    <string name="edadLabel">Edad: </string>  
+    <string name="guardarDbButton">Guardar</string>
+    <string name="app_name">Weight Control</string>  
+    <string name="tipoActividadLabel">Tipo actividad:</string>
+    <string name="pieLabel">Weight Control (c) 2012 Bernardo Secades</string>    
+</resources>

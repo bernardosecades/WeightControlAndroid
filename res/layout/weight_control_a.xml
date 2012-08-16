@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	    <!-- android:layout_span="2"  -->
+	    
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"     
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*" >
+  
+    
+<!-- INICIO FILA 1 -->
+<TableRow>        
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/estaturaLabel"
+	    />  	 
+	<EditText android:id="@+id/estaturaEditText"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" />  
+</TableRow>    
+<!-- FIN FILA 1  -->    
+
+<!-- INICIO FILA 2 -->
+<TableRow>        
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/edadLabel"
+	    />  	 
+	<EditText android:id="@+id/edadEditText"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" />  
+</TableRow>    
+<!-- FIN FILA 2  -->  
+
+<!-- INICIO FILA 3 -->
+<TableRow>        
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/pesoLabel"
+	    />  	 
+	<EditText android:id="@+id/pesoEditText"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" />  
+</TableRow>    
+<!-- FIN FILA 3  -->
+
+<!-- INICIO FILA 4 --> 
+<TableRow>
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/tipoActividadLabel"
+	    />    
+    <Spinner
+    android:id="@+id/tipoActividadSpinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</TableRow>
+<!-- FIN FILA 4 -->
+
+<!-- INICIO FILA 5 -->
+<TableRow>   
+      
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:text="@string/resultCaloriasLabel"
+	    />
+  
+	<TextView android:id="@+id/result_calorias"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:text=""
+	    android:gravity="right"	    
+	    android:background="#de8229"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:paddingRight="10dp"
+	    android:textColor="#ffc318"
+	    android:typeface="monospace" />     
+
+</TableRow>    
+<!-- FIN FILA 5  -->
+
+<!-- INICIO FILA 6 -->
+<TableRow>   
+      
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:text="@string/resultTxtLabel"
+	    />
+  
+	<TextView android:id="@+id/result_txt"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:text=""
+	    android:gravity="right"	    
+	    android:background="#de8229"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:paddingRight="10dp"
+	    android:textColor="#ffc318"
+	    android:typeface="monospace" />     
+
+</TableRow>    
+<!-- FIN FILA 6  -->
+
+<!-- INICIO FILA 7 -->
+<TableRow>   
+      
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:text="@string/resultPiTxtLabel"
+	    />
+  
+	<TextView android:id="@+id/result_pi"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:text=""
+	    android:gravity="right"	    
+	    android:background="#de8229"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:paddingRight="10dp"
+	    android:textColor="#ffc318"
+	    android:typeface="monospace" />     
+
+</TableRow>    
+<!-- FIN FILA 7  -->
+
+<!-- INICIO FILA 8 -->
+<TableRow>   
+	
+	<!--  INICIO BOTON GUARDAR DB  -->
+	<Button android:id="@+id/calcularImageButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onClickGuardarResultado"
+		android:text="@string/guardarDbButton"/>  
+	<!-- FIN BOTON GUARDA DB -->	
+	
+	<!--  INICIO BOTON RESULT  -->
+	<Button android:id="@+id/calcularImageButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onClickObtenerResultado"
+		android:text="Ver resultado" />  
+	<!-- FIN BOTON RESULT -->	
+
+</TableRow>  
+<!-- FIN FILA 8 -->
+
+            
+</TableLayout>  
+
+</LinearLayout>
+    
+
+

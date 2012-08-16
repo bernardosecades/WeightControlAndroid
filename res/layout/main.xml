@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <!-- INICIO LOGO  -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_weight="2"
+    android:orientation="vertical"
+	>
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"        
+        android:color="#cfcfcf"
+        android:textSize="10sp"
+        android:text="Logotipo Aplicación"
+        android:gravity="center"
+      	/> 
+    
+    </LinearLayout>
+    <!-- FIN LOGO  -->    
+    
+    <!-- INICIO OPCIONES -->
+    <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+				<!-- BUTTON -->    
+				<ImageButton android:id="@+id/boton1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/chart" 
+				    android:background="#FFFFFF"
+				    android:layout_weight="1"/>   
+				<TextView android:id="@+id/txtboton1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Opción 1"
+				    android:typeface="monospace"
+				     />   				    
+			      	
+				<!-- BUTTON -->    
+				<ImageButton android:id="@+id/boton2"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/estrella" 
+				    android:background="#FFFFFF"
+				    android:layout_weight="1"/> 	        
+                
+                
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+				<!-- BUTTON -->    
+				<ImageButton android:id="@+id/boton3"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/ok"
+				    android:background="#FFFFFF"
+				    android:layout_weight="1" />      
+			      	
+				<!-- BUTTON -->    
+				<ImageButton android:id="@+id/boton4"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/ok"
+				    android:background="#FFFFFF"
+				    android:layout_weight="1" />   		        
+                
+                
+            </TableRow>
+
+    </TableLayout>   
+    <!-- FIN OPCIONES -->
+    
+    <!-- INICIO PIE -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:color="#cfcfcf"
+        android:textSize="10sp"
+        android:text="@string/pieLabel"
+        android:paddingBottom="5sp"/>    
+    <!-- FIN PIE -->
+
+</LinearLayout>

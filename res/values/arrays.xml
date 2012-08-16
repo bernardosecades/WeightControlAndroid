@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="tipo_actividad">
+		<item>Media</item>
+		<item>Baja</item>		
+		<item>Alta</item>
+		<item>Muy alta</item>
+	</string-array>    
+</resources>
